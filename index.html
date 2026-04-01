@@ -20,8 +20,14 @@
             text-align: center;
             color: white;
             font-size: 28px;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+            margin-bottom: 40px;
         }
         .card {
             background: white;
@@ -59,15 +65,9 @@
             font-weight: 500;
             transition: opacity 0.2s;
         }
-        .card a:hover {
-            opacity: 0.9;
-        }
-        .tag {
-            background: #f0f0f0;
-            color: #666;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
+        .card a:hover { opacity: 0.9; }
+        .card.alt a {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
         .footer {
             text-align: center;
@@ -80,33 +80,35 @@
 <body>
     <div class="container">
         <h1>📚 知识库</h1>
+        <p class="subtitle">YouTube AI视频课程 | 随时随地学习</p>
 
         <div class="card">
             <h2>📺 YouTube AI视频爆款复刻方法论</h2>
             <p>大成老师直播整理 | 爆款IP + 爆款脚本 | 实操流程</p>
-            <a href="YouTube_AI视频爆款复刻方法论.html">在线阅读</a>
+            <a href="YouTube_AI视频爆款复刻方法论.html">在线阅读 →</a>
         </div>
 
-        <div class="card">
+        <div class="card alt">
             <h2>🎨 爆款复刻思维导图</h2>
             <p>可视化思维导图 | 核心要点一目了然</p>
-            <a href="YouTube_AI视频爆款复刻_思维导图.html">在线阅读</a>
+            <a href="YouTube_AI视频爆款复刻_思维导图.html">在线阅读 →</a>
         </div>
 
         <div class="card">
             <h2>📖 第四章第一节详细笔记</h2>
             <p>YouTube AI视频实战手册 | 七大赛道详解</p>
-            <a href="第四章第一节_详细笔记.html">在线阅读</a>
+            <a href="第四章第一节_详细笔记.html">在线阅读 →</a>
         </div>
 
-        <div class="card">
+        <div class="card alt">
             <h2>🗺️ 第四章第一节思维导图</h2>
             <p>第四章内容梳理 | 便于复习记忆</p>
-            <a href="第四章第一节_思维导图.html">在线阅读</a>
+            <a href="第四章第一节_思维导图.html">在线阅读 →</a>
         </div>
 
         <div class="footer">
-            用手机扫描二维码访问 📱
+            用手机扫描二维码访问 📱<br>
+            github.com/676996352-blip/knowledge-base
         </div>
     </div>
 </body>
