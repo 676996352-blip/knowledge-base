@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube AI视频爆款复刻方法论 - 思维导图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 30px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .mindmap {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .level1 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            padding: 24px;
+            width: 280px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .card-icon {
+            font-size: 2em;
+        }
+        
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #1e293b;
+        }
+        
+        .card-content {
+            color: #475569;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+        
+        .card-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .card-content li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .card-content li::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        
+        .formula {
+            background: #1e293b;
+            color: #fbbf24;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        
+        .center-card {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            color: white;
+            text-align: center;
+            width: 320px;
+        }
+        
+        .center-card .card-header {
+            border-bottom-color: rgba(255,255,255,0.3);
+        }
+        
+        .center-card .card-title {
+            color: white;
+        }
+        
+        .center-card .card-content {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .level2 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding-left: 40px;
+        }
+        
+        .section-title {
+            color: #e2e8f0;
+            font-size: 1.3em;
+            margin: 30px 0 20px 0;
+            text-align: center;
+        }
+        
+        .method-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            padding: 20px;
+            width: 250px;
+        }
+        
+        .method-card h4 {
+            color: #3b82f6;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        
+        .method-card ul {
+            list-style: none;
+            color: #64748b;
+            font-size: 0.9em;
+        }
+        
+        .method-card li {
+            padding: 4px 0;
+        }
+        
+        .warning {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 10px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 10px;
+        }
+        
+        .warning-title {
+            color: #dc2626;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .tip-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 10px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        
+        .flow-step {
+            background: #3b82f6;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .flow-arrow {
+            color: #94a3b8;
+            font-size: 1.5em;
+        }
+        
+        .rule-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .rule-item {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 3px solid;
+        }
+        
+        .rule-item.red { border-color: #ef4444; }
+        .rule-item.green { border-color: #22c55e; }
+        .rule-item.blue { border-color: #3b82f6; }
+        .rule-item.yellow { border-color: #eab308; }
+        
+        .rule-item h5 {
+            font-size: 0.95em;
+            margin-bottom: 5px;
+        }
+        
+        .rule-item.red h5 { color: #dc2626; }
+        .rule-item.green h5 { color: #16a34a; }
+        .rule-item.blue h5 { color: #2563eb; }
+        .rule-item.yellow h5 { color: #ca8a04; }
+        
+        .rule-item p {
+            font-size: 0.85em;
+            color: #64748b;
+        }
+        
+        .table-box {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+        
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        th {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        tr:hover {
+            background: #f1f5f9;
+        }
+        
+        .emoji-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+        
+        .emoji-badge.red { background: #fef2f2; color: #ef4444; }
+        .emoji-badge.green { background: #f0fdf4; color: #22c55e; }
+        .emoji-badge.blue { background: #eff6ff; color: #3b82f6; }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #94a3b8;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube AI视频爆款复刻方法论</h1>
+        <p class="subtitle">大成老师直播整理 | 主讲人：YouTube航海实战玩家 | 整理：B Buddy</p>
+        
+        <div class="mindmap">
+            
+            <!-- 核心公式 -->
+            <div class="level1">
+                <div class="card center-card">
+                    <div class="card-header">
+                        <span class="card-icon">🎯</span>
+                        <span class="card-title">爆款方法论</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="formula">爆款视频 = 爆款IP + 爆款脚本</div>
+                        <p>IP是"好皮囊"，脚本是"好故事"<br>两者缺一不可</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-title">📚 第一部分：爆款IP详解</h3>
+            
+            <div class="level1">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🔍</span>
+                        <span class="card-title">什么是爆款IP</span>
+                    </div>
+                    <div class="card-content">
+                        <p>YouTube上百看不腻的好皮囊</p>
+                        <ul>
+                            <li>卡通动物（猫、狗）</li>
+                            <li>影视IP（蜘蛛侠、钢铁侠）</li>
+                            <li>AI形象（AI3眼金）</li>
+                            <li>K-pop相关形象</li>
+                        </ul>
+                        <div class="tip-box">
+                            <strong>💡 流量规律：</strong>有些IP持续爆，有些阶段性爆，国内火≠国外火
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🗺️</span>
+                        <span class="card-title">寻找IP三大渠道</span>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>渠道1 梗百科</strong><br>每周看更新，去油管验证</li>
+                            <li><strong>渠道2 无痕刷首页</strong><br>陌生形象就搜索验证</li>
+                            <li><strong>渠道3 热门影视游戏</strong><br>关注全球流行文化</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">✅</span>
+                        <span class="card-title">判断IP能否使用</span>
+                    </div>
+                    <div class="card-content">
+                        <p>验证步骤：</p>
+                        <ol style="padding-left:20px;margin-top:8px;">
+                            <li>油管搜索IP名</li>
+                            <li>热门程度排序</li>
+                            <li>筛选本月/本周</li>
+                            <li>选短视频</li>
+                        </ol>
+                        <div class="tip-box">
+                            <strong>标准：</strong>近期有百万+播放 = 可以做
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-title">📝 第二部分：爆款脚本详解</h3>
+            
+            <div class="level1">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">💡</span>
+                        <span class="card-title">什么是好脚本</span>
+                    </div>
+                    <div class="card-content">
+                        <p><span class="highlight">能触动情绪的好故事</span></p>
+                        <table>
+                            <tr>
+                                <th>好脚本</th>
+                                <th>坏脚本</th>
+                            </tr>
+                            <tr>
+                                <td>触动情绪</td>
+                                <td>视觉洗脑</td>
+                            </tr>
+                            <tr>
+                                <td>有深度</td>
+                                <td>看完无波动</td>
+                            </tr>
+                            <tr>
+                                <td>爆了还会再爆</td>
+                                <td>容易同质化</td>
+                            </tr>
+                        </table>
+                        <div class="tip-box">
+                            <strong>验证方法：</strong>同一脚本用不同IP做都爆 = 好脚本
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🔎</span>
+                        <span class="card-title">寻找脚本三大方法</span>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>方法1 让YouTube推荐</strong><br>订阅博主 → 刷视频 → 养算法</li>
+                            <li><strong>方法2 第三方数据网站</strong><br>看Top Videos，筛选日期</li>
+                            <li><strong>方法3 国内平台挖掘</strong><br>抖音/快手/小红书/B站</li>
+                        </ul>
+                        <div class="tip-box">
+                            <strong>关键词：</strong>搞笑反转、很感人、结尾绝了、抽象
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-title">⚠️ 第三部分：脚本筛选四原则</h3>
+            
+            <div class="level1">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🚫</span>
+                        <span class="card-title">原则一：避开未成年人</span>
+                    </div>
+                    <div class="card-content">
+                        <p>油管审查特别严，抓到直接封号</p>
+                        <div class="warning">
+                            <div class="warning-title">禁止类型：</div>
+                            <p>儿童处于危险环境、婴儿哭声开场、未成年人参与剧情</p>
+                        </div>
+                        <div class="tip-box">
+                            <strong>解决：</strong>能换成年人就换，非必须用则不做
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🚫</span>
+                        <span class="card-title">原则二：避开恶心擦边</span>
+                    </div>
+                    <div class="card-content">
+                        <p>封面看着就不舒服的，不要做</p>
+                        <ul>
+                            <li>生理性不适画面</li>
+                            <li>擦边内容</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">✅</span>
+                        <span class="card-title">原则三：强画面落文案</span>
+                    </div>
+                    <div class="card-content">
+                        <p>光看画面不看字幕，也能看懂脚本</p>
+                        <div class="tip-box">
+                            <strong>优点：</strong>不依赖语言，翻译准确，外国人也能懂
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">✅</span>
+                        <span class="card-title">原则四：不受文化差异影响</span>
+                    </div>
+                    <div class="card-content">
+                        <p>避免只有国内才懂的梗</p>
+                        <div class="warning">
+                            <div class="warning-title">禁止类型：</div>
+                            <p>高考相关段子、国内特定背景笑话</p>
+                        </div>
+                        <div class="tip-box">
+                            <strong>原因：</strong>老外get不到笑点，报点没了
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-title">🔧 第四部分：实操复刻流程</h3>
+            
+            <div class="level1">
+                <div class="card" style="width:100%;max-width:900px;">
+                    <div class="card-header">
+                        <span class="card-icon">⚙️</span>
+                        <span class="card-title">完整操作流程</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="flow">
+                            <span class="flow-step">1. 找视频链接</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-step">2. Gemini分镜</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-step">3. 调整脚本</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-step">4. 生成角色图</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-step">5. 即梦生视频</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-step">6. 剪映剪辑</span>
+                        </div>
+                        
+                        <div class="rule-grid">
+                            <div class="rule-item blue">
+                                <h5>🔧 分镜工具</h5>
+                                <p>Google AI Studio<br><strong>必须用 Gemini 3.1 Pro</strong></p>
+                            </div>
+                            <div class="rule-item green">
+                                <h5>🎨 生图工具</h5>
+                                <p>即梦官网<br>换衣服/人脸问题用彩色素描</p>
+                            </div>
+                            <div class="rule-item yellow">
+                                <h5">🎬 生视频</h5>
+                                <p>即梦2.0<br>10个分镜一组，指定镜头类型</p>
+                            </div>
+                            <div class="rule-item red">
+                                <h5">✂️ 剪辑</h5>
+                                <p>剪映<br>先导入BGM对齐节奏</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-title">🎵 第五部分：BGM获取技巧</h3>
+            
+            <div class="level1">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">🎧</span>
+                        <span class="card-title">BGM三大获取方法</span>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>方法1 对标视频提取</strong><br>播放视频 → 复制链接 → 下载 → 导入剪映分离音频</li>
+                            <li><strong>方法2 平台识别</strong><br>QQ音乐/网易云听歌识曲</li>
+                            <li><strong>方法3 问AI</strong><br>把视频丢给AI问BGM名称</li>
+                        </ul>
+                        <div class="tip-box">
+                            <strong>💡 60秒以下不用担心版权问题</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">⚠️</span>
+                        <span class="card-title">核心避坑指南</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="rule-grid">
+                            <div class="rule-item red">
+                                <h5>🚫 模型选择</h5>
+                                <p>必须用Gemini 3.1 Pro<br>不要用3flash</p>
+                            </div>
+                            <div class="rule-item yellow">
+                                <h5>🚫 IP命名</h5>
+                                <p>避免版权角色名<br>用小美、小帅代替</p>
+                            </div>
+                            <div class="rule-item red">
+                                <h5>🚫 内容选择</h5>
+                                <p>未成年人、恶心擦边<br>国内特有文化梗</p>
+                            </div>
+                            <div class="rule-item green">
+                                <h5>✅ 信息茧房</h5>
+                                <p>养号用小号<br>避免关注太多同类</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-title">🚀 行动建议</h3>
+            
+            <div class="level1">
+                <div class="card" style="width:100%;max-width:700px;">
+                    <div class="card-header">
+                        <span class="card-icon">🎯</span>
+                        <span class="card-title">新手行动路径</span>
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <th>步骤</th>
+                                <th>任务</th>
+                            </tr>
+                            <tr>
+                                <td>第1步</td>
+                                <td>订阅提供的真人博主，养号</td>
+                            </tr>
+                            <tr>
+                                <td>第2步</td>
+                                <td>学会找爆款IP和脚本</td>
+                            </tr>
+                            <tr>
+                                <td>第3步</td>
+                                <td>用Gemini 3.1 Pro练习分镜</td>
+                            </tr>
+                            <tr>
+                                <td>第4步</td>
+                                <td>用即梦生成角色图和视频</td>
+                            </tr>
+                            <tr>
+                                <td>第5步</td>
+                                <td>完成第一个复刻作品</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="formula" style="margin-top:20px;">
+                            不要等教程 > 不要照抄SOP > 主动探索 + 大量实践
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <footer>
+            <p>整理自大成老师YouTube航海直播 | 2026年3月31日</p>
+            <p>整理工具：B Buddy | 如有疑问请咨询直播教练</p>
+        </footer>
+    </div>
+</body>
+</html>
