@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四章第一节详细笔记</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px 60px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 28px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        .meta {
+            color: #888;
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #667eea;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-left: 12px;
+            border-left: 4px solid #667eea;
+        }
+        h3 { font-size: 17px; color: #333; margin-top: 25px; margin-bottom: 10px; }
+        h4 { font-size: 15px; color: #555; margin-top: 20px; }
+        p { margin-bottom: 12px; }
+        ul, ol { margin-left: 25px; margin-bottom: 15px; }
+        li { margin-bottom: 6px; }
+        blockquote {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 6px 6px 0;
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:hover { background: #f8f9fa; }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "SF Mono", Monaco, Consolas, monospace;
+            font-size: 13px;
+            color: #e83e8c;
+        }
+        pre {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        pre code { background: transparent; color: inherit; padding: 0; }
+        hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+        strong { color: #c7254e; }
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back:hover { text-decoration: underline; }
+        .highlight {
+            background: #fff3cd;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">← 返回首页</a>
+        <h1 id="ai">第四章第一节:多种热门AI内容的制作方法</h1>
+<blockquote>
+<p><strong>课程来源</strong>: 生财有术 - YouTube AI视频实战手册<br />
+<strong>章节</strong>: 第四章【实操 3/4】生产Shorts视频<br />
+<strong>小节</strong>: 01.【3月更新】多种热门AI内容的制作方法<br />
+<strong>学习时间</strong>: 2026年3月30日</p>
+</blockquote>
+<hr />
+<h2 id="_1">📋 目录</h2>
+<ol>
+<li><a href="#1-seedance-20-爆款视频制作">Seedance 2.0 爆款视频制作</a></li>
+<li><a href="#2-语言类赛道">语言类赛道</a></li>
+<li><a href="#3-形式爆款赛道无语言">形式爆款赛道(无语言)</a></li>
+<li><a href="#4-印度故事赛道无语言">印度故事赛道(无语言)</a></li>
+<li><a href="#5-真人实拍赛道无语言">真人实拍赛道(无语言)</a></li>
+<li><a href="#6-科普解说拼接类解说">科普解说(拼接类解说)</a></li>
+<li><a href="#7-爆款视频解说原视频解说">爆款视频解说(原视频解说)</a></li>
+</ol>
+<hr />
+<h2 id="1-seedance-20">1. Seedance 2.0 爆款视频制作</h2>
+<h3 id="11-seedance20">1.1 能使用Seedance2.0的不同渠道</h3>
+<table>
+<thead>
+<tr>
+<th>渠道</th>
+<th>特点</th>
+<th>价格</th>
+<th>推荐度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>即梦网页版</strong></td>
+<td>并发数限制10个,工作日白天排队数小时</td>
+<td>会员制</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><strong>小云雀</strong></td>
+<td>速度快(10分钟内),支持抖音真人视频参考,支持2.0/2.0fast</td>
+<td>39元/月(首月优惠)</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><strong>豆包</strong></td>
+<td>每账号8个免费fast额度,10分钟内完成</td>
+<td>免费</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><strong>随变APP</strong></td>
+<td>免费,账号有限额,模型为fast,30分钟内可出</td>
+<td>免费</td>
+<td>⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<p><strong>使用建议</strong>:
+- 工作日白天用小云雀或豆包
+- 晚上或周末用即梦网页版
+- 随变APP作为补充</p>
+<h3 id="12-seedance20shorts">1.2 用Seedance2.0创作语言类shorts</h3>
+<h4 id="_2">🎯 核心突破</h4>
+<p><strong>传统工作流</strong>:</p>
+<pre><code>脚本 → 分镜图 → 视频 → 剪辑
+</code></pre>
+<p><strong>Seedance 2.0工作流</strong>:</p>
+<pre><code>角色图 + 场景关键帧 → 直接生成连贯视频
+</code></pre>
+<h4 id="_3">🎬 导演思维</h4>
+<table>
+<thead>
+<tr>
+<th>传统概念</th>
+<th>AI制作对应</th>
+<th>关键点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>演员定妆照</strong></td>
+<td>角色参考图</td>
+<td>不同剧本配不同服装,提升视觉新鲜感</td>
+</tr>
+<tr>
+<td><strong>摄影棚勘景</strong></td>
+<td>场景关键帧</td>
+<td>一个场景只需要一个关键帧图</td>
+</tr>
+<tr>
+<td><strong>服化道</strong></td>
+<td>物品参考图</td>
+<td>核心道具需单独生成参考图</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心公式</strong>:</p>
+<blockquote>
+<p><strong>参考图精准指定 + 分镜秒级控制 + 特写镜头指定</strong></p>
+</blockquote>
+<h4 id="_4">📝 制作流程</h4>
+<p><strong>第一步:获取对标视频并拆解</strong></p>
+<ol>
+<li><strong>下载视频</strong>:</li>
+<li>推荐: https://greenvideo.cc/youtube (稳定,视频音频需分开下载)</li>
+<li>备选: https://yt5s.biz/zh-cn</li>
+<li>
+<p>付费: 哼哼猫(https://6666.su27.net/)</p>
+</li>
+<li>
+<p><strong>对标赛道推荐</strong>:</p>
+</li>
+<li>✅ 优先选择: 非AI赛道的真人搞笑形式类脚本</li>
+<li>✅ 爆率最高: 有语言的,或自己加语言</li>
+<li>✅ 时长: 30s以内</li>
+<li>
+<p>⚠️ 注意: 避免直接照搬复刻,要有创意改编</p>
+</li>
+<li>
+<p><strong>智能镜头分割</strong>:</p>
+</li>
+<li>导入剪映 → 右键视频 → 智能镜头分割</li>
+<li>人工修正两遍:<ul>
+<li>第一遍: 完全复刻,理解镜头设计</li>
+<li>第二遍: 思考微创新调整</li>
+</ul>
+</li>
+</ol>
+<p><strong>第二步:复刻/改编/设计脚本</strong></p>
+<ol>
+<li><strong>手动拆解脚本骨架</strong>:</li>
+<li>在飞书上手写脚本骨架和改编思路</li>
+<li>标黄的地方是基于原脚本改动的地方</li>
+<li>
+<p>按照场景+核心故事线描述</p>
+</li>
+<li>
+<p><strong>使用Google AI Studio生成提示词</strong>:</p>
+</li>
+<li>工具: https://aistudio.google.com/</li>
+<li>模型推荐: Gemini 3.1Pro</li>
+<li>提示词模版: 使用金鱼的语言类提示词</li>
+</ol>
+<p><strong>金鱼提示词优点</strong>:
+1. 会给每个角色生成适配剧本场景的服装
+2. 会给到场景、道具全局一致性锚点
+3. 对于微创新后的图片还原度、视频动作以及台词对话改编都还不错</p>
+<p><strong>投喂内容</strong>:
+1. 对标视频链接/本地视频文件
+2. 提示词模版(金鱼的语言类提示词)
+3. 人工拆解后的脚本骨架和微创思路
+4. 提升图片和视频质量的提示词</p>
+<p><strong>第三步:生成图片(角色图、分镜/关键帧图)</strong></p>
+<ol>
+<li><strong>图片生成工具</strong>:</li>
+<li><strong>Nano Banana Pro</strong>: 写实风格断崖领先</li>
+<li><strong>Lovart</strong>: Agent,可批量生图</li>
+<li>
+<p>使用平台: https://www.lovart.ai/zh/home</p>
+</li>
+<li>
+<p><strong>批量生图流程</strong>:</p>
+</li>
+<li>指定基础通用参数</li>
+<li>指定图片的参考人物</li>
+<li>
+<p>把Gas给到的【静态起始帧】提示词拿去批量生图</p>
+</li>
+<li>
+<p><strong>挑选关键帧图</strong>:</p>
+</li>
+<li>原则: 优先选中景为主、能清晰交代环境背景的图</li>
+<li>原因: 中景既能展现人物主体,又能包含足够背景信息</li>
+</ol>
+<p><strong>第四步:生成视频提示词、生成视频</strong></p>
+<p><strong>即梦视频提示词写法</strong>:</p>
+<p><strong>故事类脚本</strong>:
+基于AI给的提示词手搓,经验:
+1. 语言类尽量结合情景,洗稿还原对标的台词
+2. 一些特写镜头手动指定,引导AI聚焦
+3. 中近景为主,人物表情渲染力更强,视频画质更清晰
+4. 有效增加情绪密度和动作密度
+5. 同个场景的多个分镜合并,用秒级写法控制节奏</p>
+<p><strong>稳定核心公式</strong>:
+1. <strong>参考图指定</strong>: 清晰使用@符号绑定角色与场景图
+2. <strong>分镜秒级控制</strong>: 明确描述每个镜头的时长(如:"0-2秒画面,xxx")
+3. <strong>特写镜头指定</strong>: 明确写出"特写镜头",引导AI聚焦</p>
+<p><strong>注意事项</strong>:
+- 同一个生成任务中,尽量只包含同一个场景内的剧情
+- 每个提交任务,只上传本次生成必须用到的角色图和场景参考图
+- 加一句: "根据角色的动作和对话,自由运镜和切镜,中近镜特写。(视频不要出现任何字幕)"</p>
+<p><strong>简单形式类脚本</strong>:
+- 直接用官方手册的脚本截图大法
+- 参考: 深海圈即梦2.0信息分享汇总帖</p>
+<h4 id="_5">💡 关键技巧</h4>
+<p><strong>为什么一定要有key frame?</strong>
+- 即梦视频参考图片的能力很强
+- 可以完美继承关键帧图片角色的服装、角色站位、场景细节、图片的风格
+- 用关键帧图可以提前固定住整个视频的风格基调
+- 图片抽卡成本远远低于视频抽卡</p>
+<p><strong>key frame怎么选?</strong>
+- 核心原则: 优先选中景为主、能清晰交代环境背景的图
+- 中景既能展现人物主体的动作或状态,又能包含足够的背景信息
+- 它就像电影里的主镜头,奠定了这一段情节的视觉基调</p>
+<h4 id="_6">📊 成果展示</h4>
+<p><strong>案例: Mira_is_BACK视频</strong>
+- 对标视频: 3000万播放
+- 复刻视频: 7600万播放
+- 制作方法: 跨赛道复刻,改编空间大</p>
+<h3 id="13-seedance20">1.3 用Seedance2.0直出爆款视频</h3>
+<h4 id="_7">🎬 案例展示</h4>
+<p><strong>案例1:周星驰《家有喜事92》经典整蛊脚本复刻</strong>
+- 使用Seedance 2.0生成两段15秒的视频
+- 后期精调即可</p>
+<p><strong>案例2:Rumi被摸PP超短脚本改造</strong>
+- 更简单,生成一段15秒视频
+- 后期精调即可</p>
+<h4 id="_8">📝 方法分享</h4>
+<p><strong>(1) 打开脑洞</strong>
+- 不要完全依赖AI给微调方案
+- AI给的方案通常会天马行空,不切实际
+- AI也给很多人提供了完全一样的方案
+- 在对人的情感的把控方面,AI现阶段不可能达到人类的水平
+- <strong>要大胆想象,让Seedance 2.0帮我们实现</strong></p>
+<p><strong>(2) 做好前三秒</strong>
+- 整体脉络最重要,决定观众是否会点赞、分享
+- 前三秒极其重要,如果节奏拖沓没有看点,观众会划走
+- <strong>前三秒关键点</strong>:
+  - 信息密度要高
+  - 画面要一直有变化
+  - 多切换镜头视角和景别
+  - 安排更多的动作序列和多变的人物表情</p>
+<p><strong>(3) 后期精调</strong>
+- 删减冗余画面
+- 调速(一般加快,某些情况慢动作)
+- 加音效(更生动)
+- 加特效(片段表现力不够时)
+- 配符合情景的背景音乐
+- 加转场(不同场景间)
+- 画面智能调色(剪映自带)</p>
+<p><strong>注意事项</strong>: 导出后用视频播放器播放确认效果</p>
+<p><strong>(4) 多号齐发</strong>
+- 同一脚本多账号分发,爆率提升几倍
+- 建议做一下对白或部分细节的调整
+- 流量这玩意带点玄学,好脚本在不同号表现不同</p>
+<hr />
+<h2 id="2">2. 语言类赛道</h2>
+<h3 id="21-aishorts">2.1 为什么要做AI语言类shorts</h3>
+<h4 id="_9">🎯 三大理由</h4>
+<p><strong>1. 无语言shorts仍然是基础</strong>
+- 生财里无语言类shorts已无门槛
+- 不建议通过AI语言类shorts来开YPP(难度较大)</p>
+<p><strong>2. 更大的赛道容量,更强的变现能力</strong>
+- 老马教练: "万物皆可解说"
+- 张九月: "流量是品味的敌人,品味是单价的朋友"</p>
+<p><strong>RPM对比</strong>:
+| 类型 | RPM |
+|------|-----|
+| 无语言KPOP (1100w播放) | ~0.01-0.03 |
+| 语言类KPOP (800w播放) | ~0.09-0.15 |
+| <strong>差距</strong> | <strong>5-12倍</strong> |</p>
+<p><strong>语言人群分布</strong>:
+- 英语: 美国人、菲律宾等
+- 西班牙语: 墨西哥
+- 葡萄牙语: 巴西
+- 无语言: 印度人最多</p>
+<p><strong>3. 制作难度并不会高</strong></p>
+<h3 id="22-aishorts">2.2 AI语言类shorts的类型</h3>
+<h4 id="_10">类型一:轻度对话</h4>
+<p><strong>特点</strong>:
+- 无语言shorts加上几句简单的旁白、内心戏
+- 配音工作量不高</p>
+<p><strong>制作方法</strong>:
+1. 视频制作完成后丢给GAS
+2. 让GAS结合剧情写适当的台词
+3. 使用ElevenLabs、Minimax等配音
+4. 丢剪映里剪辑
+5. 或使用Veo3、海螺V3.1等模型直接生成音画同步内容</p>
+<p><strong>案例</strong>: 美人鱼脚本
+- 开头三句旁白
+- 中间一句
+- 结尾一句</p>
+<h4 id="_11">类型二:中度对话</h4>
+<p><strong>特点</strong>:
+- 较多的对话,但对话不长
+- 语言含量中等</p>
+<p><strong>案例</strong>: 抽象腿视频(500万播放)
+- 约30个分镜
+- 20个分镜有台词
+- 15个分镜对的上口型
+- 约110个词</p>
+<p><strong>风险提示</strong>:
+⚠️ 名人猎奇视频有很大风险
+- DEBUFF叠满: 名人猎奇、密集恐惧、儿童
+- 一周五亿流量,颗粒无收</p>
+<p><strong>制作要点</strong>:
+- 很片段时长在1s-2.5s范围
+- 台词简短,能更好地融入无语言shorts</p>
+<h4 id="_12">类型三:重度对话</h4>
+<p><strong>特点</strong>:
+- 全程对话,语速较快
+- 语言含量很高</p>
+<p><strong>案例</strong>: Speed帮助大家但没人帮他
+- 约22个分镜
+- 220个词
+- 一分钟之内说完</p>
+<p><strong>语速要求</strong>:
+- 每分钟130-180词
+- 比普通人平均语速(60-100词/分钟)快
+- 属于正常演讲、快读范畴</p>
+<p><strong>制作要点</strong>:
+- 只能在说话同时做简单动作
+- 做一些表情变化丰富信息密度</p>
+<h3 id="23">2.3 实操步骤</h3>
+<h4 id="_13">第一步:提取文本,生成音频</h4>
+<p><strong>1. 提取文案</strong>:
+- 把链接和要求发给GAS
+- 或使用哼哼猫等下载软件下载字幕</p>
+<p><strong>2. 更换角色,修改内容</strong>:
+- 不做儿童,把爸爸妈妈儿子女儿改成同龄人
+- 例如: Sakura→Rumi, Naruto→Abby, Mom→Mira, Dad→Jinu
+- 检查修改后的内容是否和情节符合</p>
+<p><strong>3. 导出JSON</strong>:
+- 让GAS按要求导出JSON
+- 去will大佬的网站生成音频: aihotvideos</p>
+<p><strong>ElevenLabs配音提示词</strong>:</p>
+<pre><code># Role: YouTube字幕处理专家 &amp; ElevenLabs架构师 (v17.0 Master)
+
+核心原则:全流程采用双语对照表格形式展示
+
+Phase 1: 角色对话提取与翻译
+- 精准角色识别
+- 逐字原文提取
+- 高质量翻译
+
+Phase 2: 配音脚本标准化
+- 格式清洗:添加[Emotion]开头,去除句尾标点
+- 互动植入
+
+Phase 3: 最终生产(JSON Production)
+</code></pre>
+<h4 id="_14">第二步:生成图片</h4>
+<p><strong>方法</strong>:
+1. 按照小黄教练的故事板提示词和分镜版来复刻
+2. 把提示词复制到飞书表格,导出CSV格式
+3. 使用工具: 故事板分镜台词处理.zip
+4. 转换成JSON后去aihotvideos生成图片</p>
+<h4 id="_15">第三步:生成视频</h4>
+<p><strong>提示词模版</strong>: CineDream Architect v12.0 (The Omnibus)</p>
+<p><strong>核心要素</strong>:
+- 角色库: Rumi、Mira、Zoey、Jinu、Abby、Mystery
+- 绝对禁令: 严禁画外描写、严禁运镜速度词、严禁弱动词
+- 运镜手册: 推进、拉远、跟随、环绕、摇移、固定
+- 表情与情绪库: 复合情绪词
+- 音效与环境库: 自然音效、人造音效、动作音效、环境底噪
+- 光影与风格库: Golden hour、Blue hour、Cyberpunk neon等</p>
+<p><strong>核心铁律</strong>:
+1. 光栅锁死法则: 所见即所得
+2. 6秒动作链: [起始动作] -&gt; [发展动作] -&gt; [结束/反应]
+3. 全感官音频协议: 音效与画面精确对应
+4. 核心提示词公式: [运镜方式], [视觉主体] + [强动作链], [表情弧光], [环境/光影], [Dialogue], [SFX], [Ambient]</p>
+<h4 id="_16">第四步:半自动剪辑</h4>
+<p><strong>工具</strong>:
+- AutoFlow.zip (谷歌插件)
+- 文件夹生成器.zip
+- capcut auto-v1.0.0.zip</p>
+<p><strong>配置</strong>:
+- 修改config.json里的素材根目录和剪映草稿路径
+- 可修改音频倍速等内容</p>
+<p><strong>效果</strong>:
+- 最主要的是音频剪了气口,自动对齐
+- 视频还是要自行剪辑</p>
+<h3 id="24">2.4 小结</h3>
+<p><strong>关键要点</strong>:
+✅ 相对于无语言shorts,AI语言类制作难度并不大<br />
+✅ 没有那么多分镜,不需要用特别快的节奏<br />
+✅ 只要故事足够吸引人,观众愿意看下去<br />
+✅ 同质化低,不在自己的赛道里卷<br />
+✅ 前三秒依然重要,频道平均选择观看率至少要80%<br />
+✅ 洗稿,不要照抄<br />
+✅ 音效要加上去<br />
+✅ 配音保持频道特色<br />
+✅ 加字幕,导出1080  </p>
+<hr />
+<h2 id="3">3. 形式爆款赛道(无语言)</h2>
+<h3 id="_17">📚 学习资源</h3>
+<p><strong>推荐阅读</strong>:<br />
+露酱: 新人必读:有手就行的爆款,油管形式类爆款,从入门到精通!<br />
+https://scys.com/articleDetail/xq_topic/55188152844585444</p>
+<h3 id="_18">🎯 核心特点</h3>
+<ul>
+<li>简单形式类脚本</li>
+<li>节奏快、视觉冲击强</li>
+<li>RPM较低但播放量高</li>
+<li>适合新人入门</li>
+</ul>
+<hr />
+<h2 id="4">4. 印度故事赛道(无语言)</h2>
+<h3 id="_19">📚 学习资源</h3>
+<p><strong>推荐阅读</strong>:
+1. 加绒圈友: 连续千万爆款印度故事赛道-复刻与微创新分享<br />
+   https://scys.com/articleDetail/xq_topic/4845184212852428</p>
+<ol>
+<li>张强numb: YouTube单账号半个月过亿播,我凭什么?<br />
+   https://scys.com/articleDetail/xq_topic/8852414215241582</li>
+</ol>
+<h3 id="_20">🎯 核心特点</h3>
+<ul>
+<li>RPM较低(约0.01)</li>
+<li>播放量高</li>
+<li>印度市场巨大</li>
+<li>适合规模化运营</li>
+</ul>
+<hr />
+<h2 id="5">5. 真人实拍赛道(无语言)</h2>
+<h3 id="_21">📚 学习资源</h3>
+<p><strong>推荐阅读</strong>:<br />
+小紫: YouTube真人实拍+AI赛道分享,开通两个高级YPP,单视频破两千万播放<br />
+https://scys.com/articleDetail/xq_topic/82811241425548412</p>
+<h3 id="_22">🎯 核心特点</h3>
+<ul>
+<li>结合真人实拍和AI</li>
+<li>制作成本较高</li>
+<li>效果更真实</li>
+<li>适合有一定制作能力的团队</li>
+</ul>
+<hr />
+<h2 id="6">6. 科普解说(拼接类解说)</h2>
+<h3 id="61">6.1 什么是科普解说</h3>
+<p><strong>概念理解</strong>:
+- 不是科学科普、地理人文讲解
+- 而是"十万个为什么"
+- 没见过的东西、现象、事物都可以解说</p>
+<p><strong>拼接类解说</strong>:
+- 通过选题采集围绕选题的不同素材
+- 通过拼接放在一起的手法
+- 属于科普解说的一种</p>
+<p><strong>优缺点</strong>:
+| 优点 | 缺点 |
+|------|------|
+| 基本不会出现0播、低播 | 太稳重,天天万播 |
+| 标准化流程后各个视频都是万播 | 流量比爆款视频解说低 |
+| 单兵作战比较强劲 | 胜在稳定 |</p>
+<h3 id="62">6.2 制作流程</h3>
+<h4 id="_23">第一步:产出文案</h4>
+<p><strong>正练方式</strong>:</p>
+<p><strong>1. 确定选题</strong>:
+- 看科普解说类型的对标内容
+- 选择10-50个文案丢给克劳德
+- 让AI理解并输出这类型的选题是什么</p>
+<p><strong>2. 创造选题</strong>:</p>
+<p><strong>提示词模版</strong>:</p>
+<pre><code>请帮我创作[数量]个shorts video选题创意,要求如下:
+
+内容结构:
+每个选题必须包含:
+- 主题标题
+- 完整分行文案(150到200英文,200-300字中文)
+- 中文关键词5个(用于素材搜索)
+- 英文关键词5个(用于素材搜索)
+- 选题类型说明(科普/文化/生活等)
+
+文案要求:
+- 每句话需要分行书写
+- 语言通俗易懂
+- 突出新奇性和知识性
+- 结尾加入互动引导
+- 适合30-50秒短视频呈现
+- 文案要先给到完整英文,再给到完整中文
+
+选题标准:
+- 话题具有新鲜感和传播性
+- 容易获取相关视频素材
+- 适合视觉化展示
+- 能激发用户评论互动
+- 符合shorts video平台调性
+
+关键词标准:
+- 关键词要具体且实用
+- 符合各平台搜索习惯
+- 中英文关键词相对应
+- 便于实际素材搜索
+- 尽量选择高搜索量词汇
+
+目标受众:[目标年龄段]
+传播平台:[具体平台]
+内容领域:[具体领域]
+文案风格:[提供情绪]
+</code></pre>
+<p><strong>3. 判断选题是否可做</strong>:
+- 根据关键词搜索是否有相关素材
+- 配合文案感受是否合适</p>
+<p><strong>重要提示</strong>:
+⚠️ 拼接类剪辑素材可以直接在YouTube上寻找并混剪
+⚠️ 只要不把原作者的脸露出来,大概率不会有问题
+⚠️ 这是合理利用版权,美国版权法第107条允许</p>
+<p><strong>4. 文案二次训练</strong>:</p>
+<p><strong>目标</strong>:
+1. 开头前三秒留住人,具备夸张性开头特点
+2. 后面的部分口语化,简洁明朗没有废话</p>
+<p><strong>方法</strong>: 把写出来的文案丢进去套用模版二次进化</p>
+<p><strong>逆练方式</strong>:</p>
+<p><strong>第一步:保存对标视频的文案</strong></p>
+<p><strong>第二步:转录成英文</strong>
+- 使用飞书妙记
+- 或其他AI转录工具</p>
+<p><strong>第三步:改写</strong></p>
+<h4 id="_24">第二步:根据文案找对应素材</h4>
+<p><strong>拼接类素材选择的注意事项</strong>:
+1. 长视频也可用,某一个亮点片段下载下来单独裁剪
+2. 在YouTube中搜索时可以不用点进去,鼠标放在视频上预览</p>
+<p><strong>素材寻找方法</strong>:</p>
+<p><strong>方法1:平台主动搜索关键词</strong>
+- 提炼关键词
+- 根据文案逐段搜索
+- 如果AI提炼的关键词有问题,尝试复制原文第一段话搜索</p>
+<p><strong>方法2:谷歌识图功能/百度识图</strong>
+- 把想要画面的截图丢给谷歌识图
+- 找到很多素材
+- 尽量不用同行的视频素材</p>
+<p><strong>方法3:通过对标视频暴露的信息获取</strong>
+- 标题以及描述说明中
+- 评论区</p>
+<p><strong>拓展搜索</strong>:
+- 热钢卷、冷却钢卷、熔炼钢卷等
+- 让GPT给词,或中文翻译成英文直接搜索</p>
+<h4 id="_25">第三步:配音</h4>
+<p><strong>3.1 收费高质量配音</strong></p>
+<p><strong>工具</strong>: ElevenLabs (https://elevenlabs.io/)</p>
+<p><strong>价格</strong>: 70多元,10W字符</p>
+<p><strong>常用角色</strong>:
+| 角色名 | API ID |
+|--------|--------|
+| Kevin W. Krause | Kiruw49gT6bkHBiboXKX |
+| Mark | WTUK291rZZ9CLPCiFTfh |
+| Nick Colter | pUT9rBL4dkCeuqxqLWVZ |
+| Alex - Young American Male | yl2ZDV1MzN4HbQJbMihG |
+| Alexander Kensington - Studio Quality | mZ8K1MPRiT5wDQaasg3i |</p>
+<p><strong>短信风格配音实操</strong>:</p>
+<p><strong>第一步:提炼要配音的对话</strong>
+- 分别提炼各角色对话
+- 方便后期切音频</p>
+<p><strong>第二步:确定配音角色,调节参数</strong>
+- 男: Adam (Legacy), Matt - Clear &amp; Conversational
+- 女: Natasha - Valley girl
+- 稳定性调低 → 更多有趣情绪展现
+- 稳定性调高 → 情绪更加稳定</p>
+<p><strong>注意事项</strong>: 尽量把语句切成小段一句一句话来配,更方便剪辑</p>
+<p><strong>3.2 不花钱调用自身电脑性能(个人版)</strong></p>
+<p><strong>工具</strong>: GPT-SoVITS</p>
+<p><strong>学习资源</strong>:<br />
+B站视频: GPT-SovitsV2,支持多语种,多音字优化,更好的音色,ZeroShot(WIN/MAC)</p>
+<h3 id="63">6.3 剪辑优化</h3>
+<h4 id="_26">第一步:优化转场、气口</h4>
+<p><strong>问题</strong>:
+- 视频直接素材拼接,加配音
+- 素材找的不符合,画面看不清
+- 没有转场特效</p>
+<p><strong>解决方案</strong>:
+1. 识别字幕
+2. 按每句话的停顿添加画面
+3. 每句话结束就转场下一个画面
+4. 一句话较长,中间多加几个画面
+5. 添加转场特效、音效</p>
+<p><strong>效果</strong>: 视频质感上升,流量达到万播标准值</p>
+<p><strong>总结</strong>: 
+⚠️ 一定要认真学习手册,一步一步对照着来
+⚠️ 不要有自己的想法
+⚠️ 如果达不到标准值,回头看看动作是否变形</p>
+<h4 id="3s">第二步:优化开头前3s</h4>
+<p><strong>YouTube指标</strong>:
+- 平均观看百分比
+- 选择观看率</p>
+<p><strong>操作步骤</strong>:
+1. 把对标视频的开头关键帧截图
+2. 谷歌识图功能搜图,找到原视频
+3. 下载视频,找到和对标视频同样的片段
+4. 看对标视频放了几秒,咱们就跟上
+5. 对标用了一个箭头,咱们也用上一个箭头
+6. 尽量做到非常相似</p>
+<p><strong>重要提示</strong>:
+⚠️ 把开头和对标视频做的一模一样
+⚠️ 文案的开头也不改动
+⚠️ 这样来提升选择观看率(非常重要)</p>
+<p><strong>成果</strong>:
+- 优化后迎来第一个爆款
+- 720w观看次数
+- 发布一星期才开始爆</p>
+<p><strong>总结</strong>:
+⚠️ 不要看到数据不好就焦虑、断更
+⚠️ 多从自己身上找原因
+⚠️ 坚持更新,等待系统推流</p>
+<h3 id="64">6.4 配乐</h3>
+<p><strong>音乐选择的重要性</strong>:
+- YouTube对版权保护有严格规定
+- 随意添加有版权音乐可能面临警告
+- 超过3次警告,频道可能被封禁
+- 视频收益全部归音乐版权方所有</p>
+<p><strong>无版权音乐来源</strong>:</p>
+<p><strong>1. YouTube音乐库</strong>
+- Shorts: 上传视频时点击"添加音效"
+- 长视频: YouTube工作室 → 音频库
+- 最安全的选择</p>
+<p><strong>2. 爱给网</strong>
+- 网址: https://www.aigei.com/
+- 配乐 → 免费商用(cc协议)
+- 需要看清楚引用要求
+- 需要署名的在视频说明中写明来源</p>
+<p><strong>署名格式</strong>:</p>
+<pre><code>本视频中使用的音乐名称:XXXX
+作者:XXXX
+来源:https://www.aigei.com/music/song/
+</code></pre>
+<p><strong>3. SoundCloud</strong>
+- 网址: https://soundcloud.com/
+- 搜索栏搜索关键词
+- 选择"Tracks" → "To listen to" → "To use commercially"
+- 没有下载入口可使用SoundCloud Downloader工具</p>
+<p><strong>4. 优质的YouTube音乐频道</strong>
+- ROYALTY FREE MUSIC
+- Audio Library
+- FreeMusicWave - No Copyright Music
+- Vlog No Copyright Music</p>
+<p><strong>版权规避注意事项</strong>:
+- 最安全: YouTube音乐库
+- 其他渠道: 当前无版权,但创作者可能未来注册版权
+- YouTube会扫描并转移收益给版权方
+- 规避风险: 找付费版权音乐网站
+- 自己创作或AI工具(付费版Suno)制作的音乐归自己</p>
+<p><strong>拓展阅读</strong>:
+1. AI音乐版权问题,如何正确发布到音乐平台
+2. 翻唱歌曲或演奏音乐不能赚钱?</p>
+<hr />
+<h2 id="7">7. 爆款视频解说(原视频解说)</h2>
+<h3 id="71">7.1 什么是爆款视频解说</h3>
+<p><strong>定义</strong>: 以爆款视频深度二创去重,或一个博主的多个视频剪辑在一起</p>
+<p><strong>优缺点</strong>:
+| 优点 | 缺点 |
+|------|------|
+| 借鉴的都是爆款视频 | 可能遇到博主diss |
+| 二创去重后流量更好 | 版权警告、要赔偿 |
+| | 要求删掉视频 |</p>
+<p><strong>规避方法</strong>:
+- 要么不以人物为主体
+- 要么以国内爆款素材为主体
+- 避免很多风险</p>
+<h3 id="72">7.2 制作流程</h3>
+<h4 id="_27">第一步:找到爆款视频</h4>
+<p><strong>不需要AI出选题,需要寻找已有爆款视频</strong></p>
+<p><strong>素材来源</strong>:
+- 国内: 抖音、快手
+- 海外: 推特、INS、TikTok</p>
+<p><strong>建立素材库</strong>:
+- 做爆款视频解说: 抢爆款视频的二创首发机会
+- 做拼接类解说: 收集同类型题材的素材</p>
+<p><strong>平台采集</strong>:
+- 锚定TikTok、X、INS
+- 复选国内抖音、快手
+- 国内素材加入文字多,去重去水印麻烦</p>
+<p><strong>了解赛道属性</strong>:
+⚠️ 海外人物视频素材做解说面临侵权风险
+⚠️ 遇到小气的素材作者可能找麻烦
+⚠️ 爆款视频解说优先选择国内爆款视频素材
+⚠️ 科普解说拼接类素材首选海外平台</p>
+<p><strong>举例</strong>:
+<strong>X平台</strong>:
+1. 确定搜索内容如"Animals"
+2. 在Top里发现爆款视频
+3. 检查是否是同行
+4. 如果是内容创作者,关注点赞
+5. 挖掘更多作者
+6. 第二天打开主页推荐,获得更多内容素材</p>
+<p><strong>不同平台特点</strong>:
+- TikTok和INS: 内容和YouTube shorts高度相似,少选择
+- 可用作补充素材或监控作者抢二创首发权</p>
+<p><strong>沉淀作者方法</strong>:
+- 搜索关键词,关注同类型账号
+- 休息一会儿或第二天通过推荐页面刷新
+- 最好是新号,容易建立信息茧房
+- 不要用网页刷,用手机刷</p>
+<h4 id="_28">第二步:准备文案</h4>
+<p><strong>① 正练文案</strong>:
+- 手动写描述词
+- 或把视频抽出图片发给GPT/克劳德
+- 让AI描述整体情节
+- 套用解说词模版完成文案二次进化</p>
+<p><strong>爆款视频解说词模版</strong>:
+(参考前文科普解说文案模版)</p>
+<p><strong>② 逆练文案</strong>:
+操作流程同上科普解说逆练工作流</p>
+<h4 id="_29">第三步:剪辑</h4>
+<p><strong>准备素材</strong>:
+1. 改写后中文文案
+2. 对标视频的原视频素材
+3. 改写后配音</p>
+<p><strong>① 导入音频,并识别字幕</strong>
+- 导入音频时切气口</p>
+<p><strong>② 导入原视频做处理</strong></p>
+<p><strong>解说词与视频时长匹配</strong>:
+- 解说词比视频长: 调慢原视频速度,或反复复制片段镜像倒放补充时长,或通过类似片段代替
+- 解说词比视频短: 删减片段,或加速匹配音频</p>
+<p><strong>③ 处理原视频</strong>
+1. 智能场景分割
+2. 选择镜像
+3. 挨个对每个片段进行居中显示
+4. 通过裁剪去除字体符号
+5. 画中画效果(背景填充-模糊)
+6. 全部处理完后创建复合片段
+7. 调整对齐音频时间轴
+8. 通过加减速方式</p>
+<p><strong>④ 给复合片段智能调色</strong>
+- 智能调色(曲线调整,锐化等)
+- 锐化参数
+- 色温饱和度色调
+- 曲线-亮度-红色通道-蓝色通道-绿色通道
+- 原素材音效能提升视频感觉可放出来一些</p>
+<p><strong>⑤ 调整字幕特效</strong></p>
+<p><strong>关键</strong>: 原素材视频解说的重点</p>
+<p><strong>原因</strong>:
+- 原素材要进行视频深度混剪
+- 如果有大量使用这个素材的创作者,可能会遇到0播问题
+- 没有过重
+- 字幕特效是很好的过重方式</p>
+<p><strong>方法</strong>: 在字幕特效上下功夫,根据每句话手动添加emoji表情包</p>
+<p><strong>⑥ 手动添加emoji表情包</strong></p>
+<p><strong>推荐网站</strong>: https://emojis.sh/</p>
+<p><strong>方法</strong>:
+- 通过文案丢给AI提炼每句话emoji关键词
+- 对应下载
+- emoji素材足够多时就不需要再下载
+- 原有的库已经足够使用</p>
+<p><strong>通过CapCut字幕特效完成emoji表情</strong></p>
+<p><strong>⑦ 导出成品</strong></p>
+<hr />
+<h2 id="_30">📊 各赛道对比总结</h2>
+<table>
+<thead>
+<tr>
+<th>赛道</th>
+<th>RPM</th>
+<th>难度</th>
+<th>推荐度</th>
+<th>适合人群</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Seedance 2.0语言类</strong></td>
+<td>0.09-0.25</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>有一定制作经验</td>
+</tr>
+<tr>
+<td><strong>语言类赛道</strong></td>
+<td>0.09-0.15</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>新人进阶</td>
+</tr>
+<tr>
+<td><strong>形式爆款(无语言)</strong></td>
+<td>0.01-0.03</td>
+<td>⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>新人入门</td>
+</tr>
+<tr>
+<td><strong>印度故事(无语言)</strong></td>
+<td>0.01</td>
+<td>⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>规模化运营</td>
+</tr>
+<tr>
+<td><strong>真人实拍</strong></td>
+<td>0.05-0.10</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>有团队有设备</td>
+</tr>
+<tr>
+<td><strong>科普解说(拼接类)</strong></td>
+<td>0.03-0.08</td>
+<td>⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>新人练手</td>
+</tr>
+<tr>
+<td><strong>爆款视频解说</strong></td>
+<td>0.05-0.10</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+<td>有一定经验</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_31">🎯 行动建议</h2>
+<h3 id="_32">新手路径</h3>
+<ol>
+<li><strong>第1周</strong>: 形式爆款(无语言)练手,熟悉工作流</li>
+<li><strong>第2-4周</strong>: 科普解说(拼接类),建立素材库</li>
+<li><strong>第2个月</strong>: 尝试语言类,提升RPM</li>
+<li><strong>第3个月</strong>: Seedance 2.0进阶,多账号运营</li>
+</ol>
+<h3 id="_33">核心要点</h3>
+<ol>
+<li>✅ 认真学习手册,不要自创</li>
+<li>✅ 坚持更新,等待系统推流</li>
+<li>✅ 数据不好时回头检查动作是否变形</li>
+<li>✅ 建立爆款库,积累改编思路</li>
+<li>✅ 前三秒至关重要,选择观看率≥80%</li>
+</ol>
+<h3 id="_34">避坑指南</h3>
+<ol>
+<li>⚠️ 不要照抄对标,要有创意改编</li>
+<li>⚠️ 注意版权问题,优先使用无版权素材</li>
+<li>⚠️ 避免名人猎奇、密集恐惧、儿童内容</li>
+<li>⚠️ 不要完全依赖AI,培养自己的创意能力</li>
+<li>⚠️ 不要焦虑断更,坚持才是王道</li>
+</ol>
+<hr />
+<h2 id="_35">📚 扩展阅读</h2>
+<h3 id="_36">必读内容</h3>
+<ol>
+<li>露酱: 形式类爆款从入门到精通</li>
+<li>Geektao: 语言类+搞笑赛道制作流程&amp;变现拆解</li>
+<li>老马教练: 万物可解说</li>
+</ol>
+<h3 id="_37">工具汇总</h3>
+<ul>
+<li>视频生成: 即梦Seedance 2.0、小云雀、豆包、随变APP</li>
+<li>图片生成: Nano Banana Pro、Lovart</li>
+<li>配音: ElevenLabs、GPT-SoVITS</li>
+<li>剪辑: 剪映/CapCut、Auto Flow</li>
+<li>下载: greenvideo.cc、yt5s.biz、哼哼猫</li>
+</ul>
+<hr />
+<p><strong>最后更新</strong>: 2026年3月30日<br />
+<strong>学习进度</strong>: 35%<br />
+<strong>下一步</strong>: 实操Seedance 2.0语言类shorts制作</p>
+    </div>
+</body>
+</html>
